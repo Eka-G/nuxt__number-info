@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="primary" height="65" fixed>
+  <v-app-bar color="primary" height="65" fixed app>
     <a href="/" class="header__logo-link">
       <img class="header__logo" alt="Awesome company" src="/logo.svg" />
     </a>
