@@ -10,7 +10,6 @@
       type="number"
       :rules="searchRules"
       class="mr-5 search__input"
-      :height="30"
       placeholder="Start typing..."
       outlined
     ></v-text-field>

@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss">
-.carousel {
-  max-width: 900px;
-}
+  .carousel {
+    max-width: 900px;
+  }
 </style>

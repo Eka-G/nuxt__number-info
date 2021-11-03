@@ -20,13 +20,13 @@
 </template>
 
 <style lang="scss">
-.header {
-  &__logo-link {
-    height: 35px;
-  }
+  .header {
+    &__logo-link {
+      height: 35px;
+    }
 
-  &__logo {
-    height: 100%;
+    &__logo {
+      height: 100%;
+    }
   }
-}
 </style>

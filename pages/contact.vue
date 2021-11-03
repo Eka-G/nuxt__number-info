@@ -17,12 +17,13 @@
 </template>
 
 <style lang="scss">
-.content-wrapper {
-  max-width: 900px;
-  text-align: center;
-}
+  .content-wrapper {
+    max-width: 900px;
+    text-align: center;
+  }
 
-.contact__instruction {
-  max-width: 200px;
-}
+  .contact__instruction {
+    max-width: 200px;
+    text-align: center;
+  }
 </style>

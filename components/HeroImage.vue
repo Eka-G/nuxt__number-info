@@ -5,7 +5,7 @@
       height="500px"
       src="/hero-img.jpg"
     >
-      <div class="hero__info pt-10 pb-7">
+      <div class="hero__info pa-10 pb-7 px-4">
         <h1>We can do anything</h1>
         <p class="ma-0">
           Awesome company do job quickly, efficiently, inexpensively. Click
@@ -17,15 +17,15 @@
 </template>
 
 <style lang="scss">
-.hero {
-  text-align: center;
+  .hero {
+    text-align: center;
 
-  &__info {
-    background: linear-gradient(
-      to top,
-      rgba(45, 48, 45, 0.87),
-      rgba(0, 0, 0, 0)
-    );
+    &__info {
+      background: linear-gradient(
+        to top,
+        rgba(45, 48, 45, 0.87),
+        rgba(0, 0, 0, 0)
+      );
+    }
   }
-}
 </style>

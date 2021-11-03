@@ -63,47 +63,46 @@
 </template>
 
 <script>
-import { required, email as checkEmail } from 'vuelidate/lib/validators';
+  import { required, email as checkEmail } from 'vuelidate/lib/validators';
 
-export default {
-  data() {
-    return {
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: '',
-      rules: {
-        firstName: [
-          (value) => required(value) || 'please fill in the field',
-        ]
-        ,
-        lastName: [
-          (value) => required(value) || 'please fill in the field',
-        ],
-        email: [
-          (value) => required(value) || 'please fill in the field',
-          (value) => checkEmail(value) || 'incorrect email',
-        ],
-        message: [
-          (value) => required(value) || 'please fill in the field',
-        ],
-      },
-      resultMessage: 'Your message has just been sent',
-      isValid: false,
-      isSnackbarVisible: false,
-    }
-  },
-
-  methods: {
-    onSubmit() {
-      this.$refs.form.reset();
-      this.toggleSnackbar();
+  export default {
+    data() {
+      return {
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+        rules: {
+          firstName: [
+            (value) => required(value) || 'please fill in the field',
+          ],
+          lastName: [
+            (value) => required(value) || 'please fill in the field',
+          ],
+          email: [
+            (value) => required(value) || 'please fill in the field',
+            (value) => checkEmail(value) || 'incorrect email',
+          ],
+          message: [
+            (value) => required(value) || 'please fill in the field',
+          ],
+        },
+        resultMessage: 'Your message has just been sent',
+        isValid: false,
+        isSnackbarVisible: false,
+      }
     },
-    toggleSnackbar() {
-      this.isSnackbarVisible = !this.isSnackbarVisible;
-    }
-  },
-}
+
+    methods: {
+      onSubmit() {
+        this.$refs.form.reset();
+        this.toggleSnackbar();
+      },
+      toggleSnackbar() {
+        this.isSnackbarVisible = !this.isSnackbarVisible;
+      }
+    },
+  }
 </script>
 
 <style lang="scss">
